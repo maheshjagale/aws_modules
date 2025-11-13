@@ -1,0 +1,14 @@
+aws_region = "ap-south-1"
+vpc_cidr_block = "10.0.0.0/16"
+public_subnet_cidrs = ["10.0.1.0/24", "10.0.2.0/24"]
+private_subnet_cidrs = ["10.0.3.0/24", "10.0.4.0/24"]
+instance_type = "t2.micro"
+ami_id = "ami-0c55b159cbfafe1f0"
+bucket_name = "my-unique-bucket-name-12345"
+iam_policy_arn = "arn:aws:iam::aws:policy/AmazonS3FullAccess"
+cluster_name = "trio-eks-cluster"
+fargate_profile_name = "trio-fargate-profile"
+function_name = "trio-lambda-function"
+runtime = "python3.8"
+handler = "lambda_function.lambda_handler"
+filename = "./lambda_function.zip"
